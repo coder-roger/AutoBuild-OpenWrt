@@ -90,6 +90,18 @@ jobs:
         echo -e "$(nproc) thread build."
         make -j$(nproc) V=s
 
+    - name: Multi-thread compile
+      working-directory: ./openwrt
+      run: |
+        echo -e "$(nproc) thread compile"
+        make -j$(nproc) V=s
+
+    - name: Single-thread compile if failure
+      working-directory: ./openwrt
+      if: failure()
+      run: |
+        make -j1 V=s
+
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
