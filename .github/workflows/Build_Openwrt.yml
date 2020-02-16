@@ -3,7 +3,7 @@
 # Lisence: MIT
 #=================================================
 
-name: Build_Openwrt_202002162042
+name: Build_Openwrt
 
 on: 
   release:
