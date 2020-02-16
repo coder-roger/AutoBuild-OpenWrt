@@ -3,7 +3,7 @@
 # Lisence: MIT
 #=================================================
 
-name: Build_Openwrt_202002152312
+name: Build_Openwrt_Esxi_202002152312
 
 on: 
   release:
@@ -70,9 +70,9 @@ jobs:
 
     - name: Configuration Customization - Build_x86_64
       env:
-        CONFIG_FILE: 'diffconfig'
+        CONFIG_FILE: 'diffconfig_e'
       run: |
-        [ -e files ] && mv files openwrt/files
+        [ -e files_e ] && mv files_e openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x ./customize.sh && ./customize.sh
         cd openwrt && make defconfig
@@ -84,16 +84,10 @@ jobs:
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
-    - name: Build firmware
-      working-directory: ./openwrt
-      run: |
-        echo -e "$(nproc) thread build."
-        make -j$(nproc) V=s
-
     - name: Multi-thread compile
       working-directory: ./openwrt
       run: |
-        echo -e "$(nproc) thread compile"
+        echo -e "$(nproc) thread build."
         make -j$(nproc) V=s
 
     - name: Single-thread compile if failure
