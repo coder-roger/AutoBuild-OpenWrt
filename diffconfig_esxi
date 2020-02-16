@@ -1,43 +1,9 @@
 CONFIG_TARGET_x86=y
 CONFIG_TARGET_x86_64=y
 CONFIG_TARGET_x86_64_Generic=y
-# CONFIG_ATH10K_THERMAL is not set
-CONFIG_KERNEL_BLK_DEV_THROTTLING=y
-CONFIG_KERNEL_CFQ_GROUP_IOSCHED=y
-CONFIG_KERNEL_CFS_BANDWIDTH=y
-CONFIG_KERNEL_CGROUP_PERF=y
-CONFIG_KERNEL_EXT4_FS_POSIX_ACL=y
-CONFIG_KERNEL_FS_POSIX_ACL=y
-CONFIG_KERNEL_IPC_NS=y
-CONFIG_KERNEL_KEYS=y
-CONFIG_KERNEL_MEMCG_SWAP=y
-CONFIG_KERNEL_MEMCG_SWAP_ENABLED=y
-CONFIG_KERNEL_NAMESPACES=y
-CONFIG_KERNEL_NET_NS=y
-CONFIG_KERNEL_PERF_EVENTS=y
-CONFIG_KERNEL_PID_NS=y
-CONFIG_KERNEL_USER_NS=y
-CONFIG_KERNEL_UTS_NS=y
-CONFIG_LIBCURL_COOKIES=y
-CONFIG_LIBCURL_FILE=y
-CONFIG_LIBCURL_FTP=y
-CONFIG_LIBCURL_HTTP=y
-CONFIG_LIBCURL_NO_SMB="!"
-CONFIG_LIBCURL_OPENSSL=y
-CONFIG_LIBCURL_PROXY=y
-CONFIG_OPENSSL_WITH_COMPRESSION=y
-CONFIG_OPENSSL_WITH_DTLS=y
-CONFIG_OPENSSL_WITH_EC2M=y
-CONFIG_OPENSSL_WITH_NPN=y
 CONFIG_PACKAGE_6in4=y
-CONFIG_PACKAGE_attr=y
-# CONFIG_PACKAGE_autosamba is not set
-CONFIG_PACKAGE_avahi-dbus-daemon=y
 # CONFIG_PACKAGE_boost-chrono is not set
 # CONFIG_PACKAGE_boost-random is not set
-CONFIG_PACKAGE_btrfs-progs=y
-CONFIG_PACKAGE_ca-bundle=y
-CONFIG_PACKAGE_cgroupfs-mount=y
 CONFIG_PACKAGE_collectd=y
 CONFIG_PACKAGE_collectd-mod-cpu=y
 CONFIG_PACKAGE_collectd-mod-interface=y
@@ -46,74 +12,36 @@ CONFIG_PACKAGE_collectd-mod-load=y
 CONFIG_PACKAGE_collectd-mod-memory=y
 CONFIG_PACKAGE_collectd-mod-network=y
 CONFIG_PACKAGE_collectd-mod-rrdtool=y
-CONFIG_PACKAGE_containerd=y
-CONFIG_PACKAGE_dbus=y
-CONFIG_PACKAGE_dnsforwarder=y
 CONFIG_PACKAGE_frpc=y
 CONFIG_PACKAGE_glib2=y
-CONFIG_PACKAGE_haproxy=y
 # CONFIG_PACKAGE_icu is not set
 CONFIG_PACKAGE_ip6tables=y
-CONFIG_PACKAGE_iptables-mod-extra=y
 CONFIG_PACKAGE_ipv6helper=y
 CONFIG_PACKAGE_kcptun-client=y
-# CONFIG_PACKAGE_kmod-8139cp is not set
-# CONFIG_PACKAGE_kmod-8139too is not set
-CONFIG_PACKAGE_kmod-br-netfilter=y
-CONFIG_PACKAGE_kmod-crypto-gf128=y
-CONFIG_PACKAGE_kmod-crypto-misc=y
-CONFIG_PACKAGE_kmod-crypto-xts=y
-CONFIG_PACKAGE_kmod-dax=y
-CONFIG_PACKAGE_kmod-dm=y
-CONFIG_PACKAGE_kmod-dummy=y
-CONFIG_PACKAGE_kmod-fuse=y
-CONFIG_PACKAGE_kmod-ikconfig=y
-CONFIG_PACKAGE_kmod-ipt-extra=y
 CONFIG_PACKAGE_kmod-ipt-nat6=y
-CONFIG_PACKAGE_kmod-lib-crc32c=y
-CONFIG_PACKAGE_kmod-macvlan=y
-CONFIG_PACKAGE_kmod-nf-ipvs=y
 CONFIG_PACKAGE_kmod-nf-nat6=y
-# CONFIG_PACKAGE_kmod-r8125 is not set
 CONFIG_PACKAGE_kmod-sit=y
-CONFIG_PACKAGE_kmod-usb-printer=y
-CONFIG_PACKAGE_kmod-veth=y
-CONFIG_PACKAGE_krb5-libs=y
+# CONFIG_PACKAGE_libatomic is not set
 CONFIG_PACKAGE_libattr=y
-CONFIG_PACKAGE_libavahi-client=y
-CONFIG_PACKAGE_libavahi-dbus-support=y
 # CONFIG_PACKAGE_libbz2 is not set
 CONFIG_PACKAGE_libcap=y
-CONFIG_PACKAGE_libcurl=y
-CONFIG_PACKAGE_libdaemon=y
 # CONFIG_PACKAGE_libdb47 is not set
-CONFIG_PACKAGE_libdbus=y
-CONFIG_PACKAGE_libdevmapper=y
 # CONFIG_PACKAGE_libdouble-conversion is not set
-CONFIG_PACKAGE_libevent2=y
-CONFIG_PACKAGE_libgd=y
+# CONFIG_PACKAGE_libexpat is not set
 # CONFIG_PACKAGE_libgdbm is not set
-CONFIG_PACKAGE_libjpeg=y
 CONFIG_PACKAGE_libltdl=y
-CONFIG_PACKAGE_liblzo=y
-CONFIG_PACKAGE_libmount=y
-CONFIG_PACKAGE_libnetwork=y
 # CONFIG_PACKAGE_libpcre2-16 is not set
-CONFIG_PACKAGE_libpng=y
-CONFIG_PACKAGE_libpopt=y
 CONFIG_PACKAGE_librrd1=y
 # CONFIG_PACKAGE_libsqlite3 is not set
 CONFIG_PACKAGE_libtirpc=y
+CONFIG_PACKAGE_libuv=y
 CONFIG_PACKAGE_libwebsockets-full=y
 # CONFIG_PACKAGE_libxml2 is not set
 # CONFIG_PACKAGE_libzstd is not set
-CONFIG_PACKAGE_luci-app-diag-core=y
 CONFIG_PACKAGE_luci-app-frpc=y
 CONFIG_PACKAGE_luci-app-mwan3=y
 CONFIG_PACKAGE_luci-app-mwan3helper=y
 # CONFIG_PACKAGE_luci-app-qbittorrent is not set
-# CONFIG_PACKAGE_luci-app-samba is not set
-CONFIG_PACKAGE_luci-app-samba4=y
 CONFIG_PACKAGE_luci-app-smartdns=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
 CONFIG_PACKAGE_luci-app-ttyd=y
@@ -121,27 +49,20 @@ CONFIG_PACKAGE_luci-app-ttyd=y
 # CONFIG_PACKAGE_luci-app-vsftpd is not set
 CONFIG_PACKAGE_luci-app-wrtbwmon=y
 # CONFIG_PACKAGE_luci-app-xlnetacc is not set
-CONFIG_PACKAGE_luci-i18n-diag-core-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-mwan3-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-mwan3helper-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-samba4-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-smartdns-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-wrtbwmon-zh-cn=y
 CONFIG_PACKAGE_luci-proto-ipv6=y
-# CONFIG_PACKAGE_luci-proto-relay is not set
 CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_luci-theme-material=y
-CONFIG_PACKAGE_mount-utils=y
 CONFIG_PACKAGE_mwan3=y
 CONFIG_PACKAGE_odhcp6c=y
 CONFIG_PACKAGE_odhcp6c_ext_cer_id=0
 CONFIG_PACKAGE_odhcpd-ipv6only=y
 CONFIG_PACKAGE_odhcpd_ipv6only_ext_cer_id=0
 CONFIG_PACKAGE_open-vm-tools=y
-CONFIG_PACKAGE_openwrt-keyring=y
-CONFIG_PACKAGE_p910nd=y
-CONFIG_PACKAGE_privoxy=y
 # CONFIG_PACKAGE_python is not set
 # CONFIG_PACKAGE_python-base is not set
 # CONFIG_PACKAGE_python-codecs is not set
@@ -166,31 +87,11 @@ CONFIG_PACKAGE_privoxy=y
 # CONFIG_PACKAGE_qt5-network is not set
 # CONFIG_PACKAGE_qt5-xml is not set
 # CONFIG_PACKAGE_rblibtorrent is not set
-# CONFIG_PACKAGE_relayd is not set
 CONFIG_PACKAGE_rrdtool1=y
-CONFIG_PACKAGE_runc=y
-# CONFIG_PACKAGE_samba36-server is not set
-CONFIG_PACKAGE_samba4-libs=y
-CONFIG_PACKAGE_samba4-server=y
-CONFIG_PACKAGE_shadowsocksr-libev-ssr-local=y
+CONFIG_PACKAGE_samba36-net=y
 CONFIG_PACKAGE_smartdns=y
-CONFIG_PACKAGE_tini=y
-CONFIG_PACKAGE_transmission-daemon-openssl=y
-CONFIG_PACKAGE_transmission-web-control=y
 CONFIG_PACKAGE_ttyd=y
-CONFIG_PACKAGE_usign=y
-CONFIG_PACKAGE_vnstat=y
-CONFIG_PACKAGE_vnstati=y
-CONFIG_PACKAGE_watchcat=y
-CONFIG_PACKAGE_wifischedule=y
-CONFIG_PACKAGE_wsdd2=y
-CONFIG_SAMBA4_SERVER_AVAHI=y
-CONFIG_SAMBA4_SERVER_VFS=y
-CONFIG_SIGNATURE_CHECK=y
-CONFIG_SIGNED_PACKAGES=y
+# CONFIG_PACKAGE_vsftpd-alt is not set
 CONFIG_TARGET_IMAGES_GZIP=y
 # CONFIG_TARGET_IMAGES_PAD is not set
-# CONFIG_V2RAY_COMPRESS_UPX is not set
 # CONFIG_VMDK_IMAGES is not set
-CONFIG_PACKAGE_vsftpd-alt=y
-CONFIG_VSFTPD_USE_UCI_SCRIPTS=y
