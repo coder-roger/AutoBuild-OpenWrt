@@ -15,4 +15,4 @@ https://github.com/esirplayground/AutoBuild-OpenWrt.git
 - When the build is complete, click the `Artifacts` button in the upper right corner of the Actions page to download the binaries.
 
 ## Customize your rom
-./scripts/diifconfig.sh > diffconfig
+./scripts/diffconfig.sh > diffconfig
