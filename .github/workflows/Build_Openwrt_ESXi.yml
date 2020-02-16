@@ -3,7 +3,7 @@
 # Lisence: MIT
 #=================================================
 
-name: Build_Openwrt_Esxi_202002161537
+name: Build_Openwrt_Esxi
 
 on: 
   release:
