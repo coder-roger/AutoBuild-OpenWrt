@@ -5,6 +5,7 @@ CONFIG_PACKAGE_6in4=y
 # CONFIG_PACKAGE_boost-chrono is not set
 # CONFIG_PACKAGE_boost-random is not set
 CONFIG_PACKAGE_frpc=y
+CONFIG_PACKAGE_glib2=y
 # CONFIG_PACKAGE_icu is not set
 CONFIG_PACKAGE_ip6tables=y
 CONFIG_PACKAGE_ipv6helper=y
@@ -13,14 +14,15 @@ CONFIG_PACKAGE_kmod-ipt-nat6=y
 CONFIG_PACKAGE_kmod-nf-nat6=y
 CONFIG_PACKAGE_kmod-sit=y
 # CONFIG_PACKAGE_libatomic is not set
+CONFIG_PACKAGE_libattr=y
 # CONFIG_PACKAGE_libbz2 is not set
 # CONFIG_PACKAGE_libdb47 is not set
 # CONFIG_PACKAGE_libdouble-conversion is not set
 # CONFIG_PACKAGE_libexpat is not set
-# CONFIG_PACKAGE_libffi is not set
 # CONFIG_PACKAGE_libgdbm is not set
 # CONFIG_PACKAGE_libpcre2-16 is not set
 # CONFIG_PACKAGE_libsqlite3 is not set
+CONFIG_PACKAGE_libtirpc=y
 # CONFIG_PACKAGE_libxml2 is not set
 # CONFIG_PACKAGE_libzstd is not set
 CONFIG_PACKAGE_luci-app-frpc=y
