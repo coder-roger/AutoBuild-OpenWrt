@@ -68,7 +68,7 @@ jobs:
         ./scripts/feeds install -a
         ./scripts/feeds install -a
 
-    - name: Configuration Customization - Build_x86_64
+    - name: Customization - Build_x86_64
       env:
         CONFIG_FILE: 'diffconfig'
       run: |
@@ -84,7 +84,7 @@ jobs:
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
-    - name: Multi-thread compile
+    - name: Multi-threads compile
       working-directory: ./openwrt
       run: |
         echo -e "$(nproc) thread build."
